@@ -66,7 +66,6 @@ const PartialSimplePanel: React.FC<Props> = ({ options, data, width, height, the
         o && chart.setOption(o);
       } catch (err) {
         console.error('Editor content error!', err);
-        setTips(err);
       }
     },
     150,

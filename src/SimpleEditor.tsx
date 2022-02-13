@@ -19,7 +19,6 @@ export class SimpleEditor extends PureComponent<PanelEditorProps<SimpleOptions>>
           description="Use default theme or follow theme of grafana (light or dark)."
         >
           <Switch
-            css=""
             checked={this.props.options.followTheme}
             value={this.props.options.followTheme}
             onChange={e => this.onChange('followTheme', (e.target as HTMLInputElement).checked)}
